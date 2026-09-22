@@ -1,0 +1,5 @@
+[hidden] { display: none !important; }
+.terminal.leaving { animation: dematerialize .8s steps(4, end) forwards; pointer-events: none; }
+.terminal.leaving input { caret-color: transparent !important; }
+@keyframes dematerialize { to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .terminal.leaving { animation: none; } }

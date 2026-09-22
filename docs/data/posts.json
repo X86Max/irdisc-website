@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Why I built IRdisC",
+    "date": "2026-09-21",
+    "author": "Max",
+    "description": "Terminal-first, simple and lightweight. The idea behind IRdisC.",
+    "slug": "why-i-built-irdisc",
+    "body": "IRdisC follows a simple idea: keep the terminal, and make IRC easier to discover.\n\nThe [project philosophy](https://github.com/X86Max/IRdisC#project-philosophy) describes the goal: reduce the barrier for new IRC users without a heavy GUI or hiding the commands experienced users already know.\n\n## IRC, discomplicated.\n\n- Keyboard access stays complete; the mouse is optional.\n- Menus and built-in help make commands easier to discover.\n- The client stays lightweight, with no third-party runtime Python dependencies.\n\nExtract the source archive, open its directory, and run:\n\n```bash\npython3 irdisc.py\n```\n\nSee the [installation instructions](./index.html#download) for requirements and other installation methods. The Web Terminal also provides an `install` command.\n\n*This short opening post summarizes the project's README.*\n"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "IRdisC",
+  "symbol": "⇹",
+  "tagline": "IRC, discomplicated.",
+  "clientRepository": "https://github.com/X86Max/IRdisC",
+  "publicSiteUrl": "https://x86max.github.io/irdisc-website/",
+  "websiteRepository": "https://github.com/X86Max/irdisc-website",
+  "irc": {
+    "network": "OFTC",
+    "server": "irc.oftc.net",
+    "port": 6697,
+    "tls": true,
+    "channel": "#irdisc"
+  },
+  "screenshot": "assets/screenshot.png",
+  "button": "assets/irdisc-88x31.gif"
+}
