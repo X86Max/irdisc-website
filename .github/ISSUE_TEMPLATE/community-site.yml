@@ -1,0 +1,56 @@
+name: "Community site / web button"
+description: "Submit your website to the IRdisC Community Sites and Webring."
+title: "[Community site] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your corner of the web!
+
+        Submissions are public and manually reviewed before appearing on the IRdisC website.
+        If you provide a web button, an approved copy will be hosted by IRdisC rather than hotlinked.
+
+        Please only submit content and images that you have permission to share.
+
+  - type: input
+    id: site-name
+    attributes:
+      label: "Site name"
+      placeholder: "My website"
+    validations:
+      required: true
+
+  - type: input
+    id: site-url
+    attributes:
+      label: "Site URL"
+      placeholder: "https://example.com/"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "A short description of your website or project."
+      placeholder: "What is your site about?"
+    validations:
+      required: true
+
+  - type: input
+    id: button-url
+    attributes:
+      label: "Web button URL (optional)"
+      description: "If your site has a button, provide the original image URL here. 88×31 buttons are especially welcome."
+      placeholder: "https://example.com/button.gif"
+    validations:
+      required: false
+
+  - type: input
+    id: button-size
+    attributes:
+      label: "Web button size (optional)"
+      description: "Native image dimensions, if known."
+      placeholder: "88×31"
+    validations:
+      required: false

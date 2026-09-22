@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="IRdisC — IRC, discomplicated. A lightweight terminal/TUI IRC client written in Python. Downloads, documentation, news and an alternate Web Terminal.">
+  __SHARE_METADATA__
+  <title>⇹ IRdisC — IRC, discomplicated.</title>
+  <link rel="icon" href="./assets/irdisc-32.png">
+  <link id="terminal-style" rel="stylesheet" href="./style.css" disabled>
+  <link id="classic-style" rel="stylesheet" href="./classic.css">
+  <link rel="stylesheet" href="./interface.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body data-interface="classic">
+  <div id="classic">
+    <header class="site-header"><a class="site-name" href="./index.html" data-site><img src="./assets/irdisc-32.png" width="32" height="32" alt=""> ⇹ IRdisC</a><span>IRC, discomplicated.</span></header>
+    <nav aria-label="Project navigation">
+      <a href="./index.html" data-site>Home</a> |
+      <a href="./index.html#about" data-site>About</a> |
+      <a href="./index.html#download" data-site>Download</a> |
+      <a href="./index.html#docs" data-site>Docs</a> |
+      <a href="./index.html#screenshots" data-site>Screenshots</a> |
+      <a href="./index.html#blog" data-site>News</a> |
+      <a href="./index.html#releases" data-site>Releases</a> |
+      <a href="./index.html#community" data-site>Community</a> |
+      <a href="./index.html#links" data-site>Links</a> |
+      <a href="./terminal.html" data-terminal>Web Terminal</a>
+    </nav>
+    <main id="classic-content" tabindex="-1"><h1>Welcome to IRdisC</h1><p>__PROJECT_ABOUT__</p><p><a href="__CLIENT_REPOSITORY__">Project repository and documentation</a></p><noscript><p>JavaScript is required for site navigation, routed content and the Web Terminal. The repository link above provides the full project documentation.</p></noscript></main>
+    <footer>IRdisC · IRC, discomplicated.<br><a href="./index.html#link" data-site>Link to IRdisC</a> | <a href="./terminal.html" data-terminal>Web Terminal</a> | <a href="__CLIENT_REPOSITORY__">GitHub</a></footer>
+  </div>
+  <main hidden class="terminal" aria-label="IRdisC web terminal">
+    <section id="output" aria-label="Terminal output" tabindex="0">
+      <div class="welcome">
+        <h1>⇹ IRdisC Web Terminal</h1>
+        <p>IRC, discomplicated.</p>
+        <p class="hint">Type '<button class="inline-command" data-command="help">help</button>' to get started.</p>
+      </div>
+    </section>
+    <form id="command-form" class="controls" autocomplete="off">
+      <label for="command" class="prompt">guest@irdisc:~$</label>
+      <input id="command" name="command" aria-label="Terminal command" aria-describedby="keyboard-hint" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="send">
+    </form>
+    <p id="keyboard-hint" class="sr-only">Enter runs the command. Up and Down recall history. Tab completes a command. Ctrl+L clears the terminal. Type help for clickable commands.</p>
+  </main>
+  <span id="activity" hidden>ready</span>
+  <p id="announcement" role="status" aria-live="polite" class="sr-only"></p>
+  <dialog id="screenshot-dialog" aria-labelledby="screenshot-title">
+    <div class="dialog-header"><h2 id="screenshot-title">IRdisC — client screenshot</h2><button id="close-dialog" aria-label="Close screenshot" autofocus>Close ×</button></div>
+    <img src="./assets/screenshot.png" alt="IRdisC curses client showing chat, conversations and users with synthetic offline demo messages.">
+    <p>Actual curses renderer · synthetic offline demo conversations · no private chat.</p>
+  </dialog>
+  <noscript>This interactive terminal needs JavaScript. <a href="__CLIENT_REPOSITORY__">Read the README on GitHub</a>.</noscript>
+</body>
+</html>

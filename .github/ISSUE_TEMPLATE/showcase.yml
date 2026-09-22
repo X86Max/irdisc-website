@@ -1,0 +1,68 @@
+name: "Community showcase"
+description: "Share something with the IRdisC Community Showcase."
+title: "[Showcase] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show us what you're doing with IRdisC!
+
+        The Showcase is for terminal setups, interesting hardware, configurations, screenshots and other things related to IRdisC.
+
+        Submissions are public and manually reviewed before appearing on the website.
+        Approved images are hosted locally by IRdisC rather than hotlinked.
+
+        Please only submit content and images that you have permission to share.
+        Do not include private chats, secrets or personal information visible in screenshots.
+
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      placeholder: "IRdisC running on my old ThinkPad"
+    validations:
+      required: true
+
+  - type: input
+    id: nickname
+    attributes:
+      label: "Name or nickname"
+      placeholder: "Your nickname"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Tell us what we're looking at."
+      placeholder: "IRdisC running on Debian on a ThinkPad from..."
+    validations:
+      required: true
+
+  - type: input
+    id: image-url
+    attributes:
+      label: "Image URL"
+      description: "Provide a public link to the image for review. An approved copy will be hosted by IRdisC."
+      placeholder: "https://example.com/irdisc-setup.png"
+    validations:
+      required: true
+
+  - type: input
+    id: image-alt
+    attributes:
+      label: "Image description"
+      description: "Briefly describe the image for visitors who cannot see it."
+      placeholder: "IRdisC open in a terminal on a ThinkPad running Debian."
+    validations:
+      required: true
+
+  - type: input
+    id: related-url
+    attributes:
+      label: "Related link (optional)"
+      description: "A personal website, project page or other relevant link."
+      placeholder: "https://example.com/"
+    validations:
+      required: false
